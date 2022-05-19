@@ -6,7 +6,7 @@
     <meta name="description" content="" />
     <meta name="author" content="Rony Santos" />
     <meta name="generator" content="Rony Santos" />
-    <title>Portafolio - Ing</title>
+    <title>Portafolio - Carlos Mondragon</title>
     <link
       rel="canonical"
       href="https://getbootstrap.com/docs/5.1/examples/album/"
@@ -56,8 +56,14 @@
             <div class="col-sm-8 col-md-7 py-4">
               <h4 class="text-white">Sobre mí</h4>
               <p class="text-capitalize fw-light text--custom">
-                Soy un desarrollador con X años de experiencia en el desarrollo
-                de diversos productos tecnologicos.....
+                Técnico e Ingeniero en Informática: Gestión tecnológica de
+                proyectos, Desarrollo de Sistemas y Aplicaciones móviles,
+                Investigación, Seguridad de las TI, Innovación y Desarrollo
+                Tecnológico. Actualmente me capacito como desarrollador
+                (Professional en Coding) en Frontend y Backend, con habilidades
+                para la resolución de problemas, Me gusta la Seguridad
+                Informática, giros de 180°. Desarrollo... genial encontré un
+                bug!
               </p>
             </div>
             <div class="col-sm-4 offset-md-1 py-4">
@@ -65,10 +71,9 @@
               <ul class="list-unstyled">
                 <li><a href="#footer" class="text-white">Redes Sociales</a></li>
                 <li>
-                  <a
-                    href="mailto:teccarlosd@gmail.com"
-                    class="text-white"
-                    >Enviar e-mail</a>
+                  <a href="mailto:teccarlosd@gmail.com" class="text-white"
+                    >Enviar e-mail</a
+                  >
                 </li>
               </ul>
             </div>
@@ -77,33 +82,40 @@
       </div>
       <div class="navbar navbar-dark bg-orange shadow-sm">
         <div class="container">
-          <a href="#" class="navbar-brand d-flex align-items-center">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              aria-hidden="true"
-              class="me-2"
-              viewBox="0 0 24 24">
-              <path
-                d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"
-              />
-              <circle cx="12" cy="13" r="4" />
-            </svg>
-            <strong>Inicio</strong> </a
-          ><button
+          <a
+            href="#"
+            onclick="showRegister()"
+            class="navbar-brand d-flex align-items-center"
+          >
+            <img src="./src/img/pagina-de-inicio.png" alt="" />
+            <strong>Inicio</strong>
+          </a>
+          <a
+            href="#"
+            onclick="showRegister1()"
+            class="navbar-brand d-flex align-items-center"
+          >
+            <img src="./src/img/internet (1).png" alt="" />
+            <strong>Formacion</strong>
+          </a>
+          <a
+            href="#"
+            onclick="showRegister2()"
+            class="navbar-brand d-flex align-items-center"
+          >
+            <img src="./src/img/portfolio.png" alt="" />
+            <strong>Proyectos</strong>
+          </a>
+
+          <button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarHeader"
             aria-controls="navbarHeader"
             aria-expanded="false"
-            aria-label="Toggle navigation">
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
         </div>
@@ -111,16 +123,18 @@
     </header>
     <main>
       <section class="py-5 text-center container">
-        <div class="row py-lg-5">
+        <div id="profileS" class="row py-lg-5">
           <div class="col-lg-6 col-md-8 mx-auto">
             <img
-              src="./img/profile.jpg"
+              src="./src/img/profile.jpg"
               style="width: 120px; height: 120px; border-radius: 50%"
-              alt=""/>
+              alt=""
+            />
             <h1 class="fw-light">Diseñador, desarrollador Web</h1>
             <p class="lead text-muted">
               Diseño y codifico cosas hermosas y sencillas, y me encanta lo que
-              hago.
+              hago. Seguridad Informática, giros de 180°.
+              Desarrollo... genial encontré un bug!
             </p>
             <p>
               <a href="#" class="btn btn-whatsapp my-2">Escríbeme</a>
@@ -130,137 +144,51 @@
         </div>
       </section>
 
-      <div class="album py-5 bg-light">
+      <section
+        id="secFormation"
+        style="display: none"
+        class="py-5 text-center container"
+      >
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <img class="formationimg" src="./src/img/3242120.png" alt="" />
+            <h1 class="fw-light">Formación Academica</h1>
+            <p class="lead text-muted">
+              Febrero 2022 – : Licenciatura en Ingeniería Informática /
+              Tecnológico de Estudios Superiores de San Felipe del Progreso.
+              Documento obtenido: Certificado/ Titulo.
+            </p>
+            <p class="lead text-muted">
+              Activismo y Desarrollo
+              Mexiquense A.C – Departamento de Informática (Dependencia pública)
+              / Puesto: Servicio social.
+            </p>
+            <h1 class="fw-light">Cursos</h1>
+            <p class="lead text-muted">
+              Computo Forense / Organizador Federación Internacional de
+              Criminología (2021).
+            </p>
+            <h1 class="fw-light">Certificacines</h1>
+            <p class="lead text-muted">
+              Computo Forense / Organizador Federación Internacional de
+              Criminología (2021).
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div id="album" class="album py-5 bg-light">        
         <div class="container">
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-            <div class="col">
-              <div class="card shadow-sm">
-                <svg
-                  class="bd-placeholder-img card-img-top"
-                  width="100%"
-                  height="225"
-                  xmlns="http://www.w3.org/2000/svg"
-                  role="img"
-                  aria-label="Placeholder: Thumbnail"
-                  preserveAspectRatio="xMidYMid slice"
-                  focusable="false">
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#55595c" />
-                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                    Thumbnail
-                  </text>
-                </svg>
-                <div class="card-body">
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary">
-                        View
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary">
-                        Edit
-                      </button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card shadow-sm">
-                <svg
-                  class="bd-placeholder-img card-img-top"
-                  width="100%"
-                  height="225"
-                  xmlns="http://www.w3.org/2000/svg"
-                  role="img"
-                  aria-label="Placeholder: Thumbnail"
-                  preserveAspectRatio="xMidYMid slice"
-                  focusable="false">
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#55595c" />
-                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                    Thumbnail
-                  </text>
-                </svg>
-                <div class="card-body">
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary">
-                        View
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        Edit
-                      </button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card shadow-sm">
-                <svg
-                  class="bd-placeholder-img card-img-top"
-                  width="100%"
-                  height="225"
-                  xmlns="http://www.w3.org/2000/svg"
-                  role="img"
-                  aria-label="Placeholder: Thumbnail"
-                  preserveAspectRatio="xMidYMid slice"
-                  focusable="false" >
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#55595c" />
-                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                    Thumbnail
-                  </text>
-                </svg>
-                <div class="card-body">
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary">
-                        View
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary">
-                        Edit
-                      </button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div
+            id="projects"
+            class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"
+          >
+            <!-- aqui escribe lo de cards -->
           </div>
         </div>
       </div>
     </main>
+    >
 
     <footer id="footer" class="py-5 bg-orange">
       <div class="container">
@@ -275,7 +203,8 @@
               stroke="#FFF"
               x="0px"
               y="0px"
-              viewBox="0 0 300.003 300.003">
+              viewBox="0 0 300.003 300.003"
+            >
               <g>
                 <g>
                   <path
@@ -316,7 +245,8 @@
             stroke="#FFF"
             x="0px"
             y="0px"
-            viewBox="0 0 511 511">
+            viewBox="0 0 511 511"
+          >
             <g>
               <path
                 d="M455.5,40h-400C24.897,40,0,64.897,0,95.5v320C0,446.103,24.897,471,55.5,471h400c30.603,0,55.5-24.897,55.5-55.5v-320
@@ -429,6 +359,10 @@
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
       integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/9c9345cf7b.js"
       crossorigin="anonymous"
     ></script>
   </body>
