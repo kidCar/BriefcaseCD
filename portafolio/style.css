@@ -1,0 +1,71 @@
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+.text--custom {
+    color: #fff;
+    text-align: justify;
+}
+
+.bg-orange {
+    background-color: #F04F17;
+}
+
+.btn-whatsapp {
+    background-color: #128c7e;
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #128c7e;
+    --bs-btn-border-color: #128c7e;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #128c7e;
+    --bs-btn-hover-border-color: #128c7e;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #128c7e;
+    --bs-btn-active-border-color: #128c7e;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #128c7e;
+    --bs-btn-disabled-border-color: #128c7e;
+}
+
+.btn-info {
+    --bs-btn-color: #fff;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-active-color: #fff;
+    --bs-btn-disabled-color: #fff;
+}
+
+.text-color-white {
+    color: #FFF;
+}
+
+#socialNetworks {
+    margin: 5vh 0;
+    padding: 0 5vw;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.social--burbble {
+    color: #FFF;
+    cursor: pointer;
+    padding: 5px 20px;
+    width: fit-content;
+    border-radius: 30px;
+    box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.5);
+}
+
+.social--burbble:hover {
+    transform: scale(105%);
+}
